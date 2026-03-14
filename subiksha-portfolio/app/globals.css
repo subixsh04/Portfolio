@@ -401,3 +401,65 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ======================================================
+   SKILLS SECTION
+   ====================================================== */
+.skills-header {
+  margin-bottom: 1.5rem;
+}
+
+.skills-intro {
+  max-width: 70ch;
+  margin-top: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  padding: 1.4rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.skill-card-label {
+  margin-bottom: 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+}
+
+.skill-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(205, 180, 248, 0.45);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 6px 16px rgba(31, 41, 55, 0.05);
+}
+
+/* Responsive skills layout */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

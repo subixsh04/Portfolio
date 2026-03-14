@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* =========================
           SECTION 3: FEATURED PROJECTS
-          This will later show your strongest projects
+          This will later show my projects
           such as Flow Survey, Penny Bread, and Event Management
           ========================= */}
       <section id="projects">
@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* =========================
           SECTION 4: ABOUT
-          This section will introduce who you are
+          This section will introduce who I am
           ========================= */}
       <section id="about" className="about-section">
         {/* Left side:
@@ -143,16 +143,68 @@ export default function Home() {
 
       {/* =========================
           SECTION 5: SKILLS
-          This will later list your technical skills
-          in a clean grouped format
+          This will list my technical skills
           ========================= */}
-      <section id="skills">
-        <h2>Skills</h2>
+      <section id="skills" className="skills-section">
+        <div className="skills-header">
+          <p className="section-tag">Skills</p>
+          <h2>Technical skills</h2>
+          <p className="skills-intro">
+            My work combines software development, data-focused problem solving,
+            research applications, and interface design. These are the main tools
+            and technologies I am currently building with and continuing to grow in.
+          </p>
+        </div>
+
+        <div className="skills-grid">
+          <div className="skill-card">
+            <p className="skill-card-label">Languages</p>
+            <div className="skill-chip-group">
+              <span className="skill-chip">Java</span>
+              <span className="skill-chip">Python</span>
+              <span className="skill-chip">C++</span>
+              <span className="skill-chip">JavaScript</span>
+              <span className="skill-chip">TypeScript</span>
+              <span className="skill-chip">Kotlin</span>
+            </div>
+          </div>
+
+          <div className="skill-card">
+            <p className="skill-card-label">Frontend</p>
+            <div className="skill-chip-group">
+              <span className="skill-chip">Angular</span>
+              <span className="skill-chip">Bootstrap</span>
+              <span className="skill-chip">Tailwind</span>
+              <span className="skill-chip">HTML/CSS</span>
+            </div>
+          </div>
+
+          <div className="skill-card">
+            <p className="skill-card-label">Database / Backend</p>
+            <div className="skill-chip-group">
+              <span className="skill-chip">MySQL</span>
+              <span className="skill-chip">MongoDB</span>
+              <span className="skill-chip">Firebase</span>
+            </div>
+          </div>
+
+          <div className="skill-card">
+            <p className="skill-card-label">Data / ML</p>
+            <div className="skill-chip-group">
+              <span className="skill-chip">Pandas</span>
+              <span className="skill-chip">NumPy</span>
+              <span className="skill-chip">Matplotlib</span>
+              <span className="skill-chip">Seaborn</span>
+              <span className="skill-chip">scikit-learn</span>
+            </div>
+          </div>
+        </div>
       </section>
+
 
       {/* =========================
           SECTION 6: EXPERIENCE
-          This will later show TA work, research work,
+          This will later my TA work, research work,
           and other professional experience
           ========================= */}
       <section id="experience">
