@@ -6,9 +6,21 @@ export default function Home() {
           We will properly design this later.
           For now it stays simple.
           ========================= */}
-      <section>
-        <p>Navbar Section</p>
+      <section className="navbar-section">
+        <div className="navbar-brand">
+          <span className="brand-mark">SV</span>
+          <span className="brand-name">Subiksha Vaidhyanathan</span>
+        </div>
+
+        <nav className="navbar-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </section>
+
 
       {/* =========================
           SECTION 2: HERO SECTION
@@ -75,7 +87,7 @@ export default function Home() {
           SECTION 4: ABOUT
           This section will introduce who you are
           ========================= */}
-      <section>
+      <section id="about">
         <h2>About Me</h2>
       </section>
 
@@ -84,7 +96,7 @@ export default function Home() {
           This will later list your technical skills
           in a clean grouped format
           ========================= */}
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
       </section>
 
@@ -93,7 +105,7 @@ export default function Home() {
           This will later show TA work, research work,
           and other professional experience
           ========================= */}
-      <section>
+      <section id="experience">
         <h2>Experience</h2>
       </section>
 

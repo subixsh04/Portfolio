@@ -220,3 +220,98 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ======================================================
+   NAVBAR SECTION
+   This creates a polished top navigation bar with:
+   - brand area on the left
+   - navigation links on the right
+   - soft luxury glass styling
+   ====================================================== */
+.navbar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+}
+
+/* Left side of navbar: brand/logo area */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Temporary monogram mark
+   Later we can replace this with your own custom logo */
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, rgba(125, 211, 199, 0.65), rgba(205, 180, 248, 0.65));
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08);
+}
+
+/* Your name beside the mark */
+.brand-name {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+}
+
+/* Right side links */
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Individual nav links */
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect for nav links */
+.navbar-links a:hover {
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive navbar for smaller screens */
+@media (max-width: 768px) {
+  .navbar-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    width: 100%;
+    gap: 0.9rem;
+  }
+
+  .brand-name {
+    font-size: 0.92rem;
+  }
+}
