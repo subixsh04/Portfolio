@@ -315,3 +315,89 @@ html {
     font-size: 0.92rem;
   }
 }
+
+/* ======================================================
+   SECTION TAG
+   Small label above section headings
+   ====================================================== */
+.section-tag {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* ======================================================
+  ABOUT SECTION LAYOUT
+  Two-column layout:
+  - left side = text
+  - right side = highlight boxes
+   ====================================================== */
+
+  .section-tag {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Main About text paragraphs */
+.about-description {
+  margin-top: 1rem;
+  max-width: 68ch;
+}
+
+/* Right-side highlight grid */
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Individual highlight card */
+.highlight-box {
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Small label inside each highlight box */
+.highlight-label {
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+}
+
+/* Heading inside each highlight box */
+.highlight-box h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}

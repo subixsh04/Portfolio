@@ -87,9 +87,59 @@ export default function Home() {
           SECTION 4: ABOUT
           This section will introduce who you are
           ========================= */}
-      <section id="about">
-        <h2>About Me</h2>
+      <section id="about" className="about-section">
+        {/* Left side:
+          Main About content */}
+        <div className="about-text">
+          <p className="section-tag">About Me</p>
+
+          <h2>Blending data, research, and software to solve meaningful problems</h2>
+
+          <p className="about-description">
+            I am a Computer Science student at Wright State University with interests
+            in data science, database engineering, and software development. I enjoy
+            building applications that are not only technically strong, but also
+            practical, clear, and useful for real people.
+          </p>
+
+          <p className="about-description">
+            My current research work in DASH Lab focuses on data science for health,
+            where projects are centered around creating data-driven and AI-supported
+            solutions for medical and health-related challenges. Alongside that, I
+            continue building software projects that strengthen my frontend,
+            application design, and problem-solving skills.
+          </p>
+        </div>
+
+        {/* Right side:
+          Quick highlight cards */}
+        <div className="about-highlights">
+          <div className="highlight-box">
+            <p className="highlight-label">Education</p>
+            <h3>B.S. Computer Science</h3>
+            <p>Wright State University</p>
+          </div>
+
+          <div className="highlight-box">
+            <p className="highlight-label">Primary Interests</p>
+            <h3>Data Science & Databases</h3>
+            <p>With software development as a strong complementary path</p>
+          </div>
+
+          <div className="highlight-box">
+            <p className="highlight-label">Research</p>
+            <h3>DASH Lab</h3>
+            <p>Data Science for Health and medically relevant data-driven systems</p>
+          </div>
+
+          <div className="highlight-box">
+            <p className="highlight-label">Strengths</p>
+            <h3>UI + Problem Solving</h3>
+            <p>Clean interfaces, structured thinking, and project-based learning</p>
+          </div>
+        </div>
       </section>
+
 
       {/* =========================
           SECTION 5: SKILLS
