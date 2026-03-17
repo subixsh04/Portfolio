@@ -404,7 +404,7 @@ html {
 
 
 /* ======================================================
-   SKILLS SECTION
+  SKILLS SECTION
    ====================================================== */
 .skills-header {
   margin-bottom: 1.5rem;
@@ -463,3 +463,86 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* ======================================================
+  PROJECTS SECTION
+   ====================================================== */
+.projects-header {
+  margin-bottom: 1.5rem;
+}
+
+.projects-intro {
+  max-width: 72ch;
+  margin-top: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(31, 41, 55, 0.10);
+}
+
+.featured-project {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+    linear-gradient(135deg, rgba(125, 211, 199, 0.22), rgba(205, 180, 248, 0.22));
+}
+
+.project-label {
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.project-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.45rem;
+  color: var(--text-primary);
+}
+
+.project-description {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.project-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.project-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(125, 211, 199, 0.35);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

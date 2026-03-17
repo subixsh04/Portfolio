@@ -79,8 +79,78 @@ export default function Home() {
           This will later show my projects
           such as Flow Survey, Penny Bread, and Event Management
           ========================= */}
-      <section id="projects">
-        <h2>Featured Projects</h2>
+      <section id="projects" className="projects-section">
+        <div className="projects-header">
+          <p className="section-tag">Featured Projects</p>
+          <h2>Projects that reflect my strengths in software, data, and applied problem solving</h2>
+          <p className="projects-intro">
+            These projects highlight different parts of my experience, including
+            research-focused development, frontend application building, full-stack
+            design, and practical tools built around real user needs.
+          </p>
+        </div>
+        <div className="projects-grid">
+          <article className="project-card featured-project">
+            <p className="project-label">Research + Mobile + Data</p>
+            <h3>Flow Survey Application</h3>
+            <p className="project-description">
+              Worked on an Android-based research application connected to Firebase,
+              helping improve data collection, authentication behavior, persistence,
+              and usability for a health-related research workflow.
+            </p>
+            <div className="project-chip-group">
+              <span className="project-chip">Kotlin</span>
+              <span className="project-chip">Android</span>
+              <span className="project-chip">Firebase</span>
+              <span className="project-chip">Research App</span>
+            </div>
+          </article>
+          <article className="project-card">
+            <p className="project-label">Frontend + Product Thinking</p>
+            <h3>Penny Bread</h3>
+            <p className="project-description">
+              Built a practical application focused on helping users make smarter,
+              budget-conscious grocery decisions through structured UI, filtering,
+              and useful data presentation.
+            </p>
+            <div className="project-chip-group">
+              <span className="project-chip">UI Design</span>
+              <span className="project-chip">Data Handling</span>
+              <span className="project-chip">Filtering</span>
+              <span className="project-chip">User-Focused Design</span>
+            </div>
+          </article>
+          <article className="project-card">
+            <p className="project-label">Web Development</p>
+            <h3>Event Management Platform</h3>
+            <p className="project-description">
+              Designed and developed a modular event management application with
+              structured frontend components, dashboard planning, and scalable
+              architecture for future backend integration and deployment.
+            </p>
+            <div className="project-chip-group">
+              <span className="project-chip">Angular</span>
+              <span className="project-chip">TypeScript</span>
+              <span className="project-chip">Component Design</span>
+              <span className="project-chip">Dashboard UI</span>
+            </div>
+          </article>
+          <article className="project-card">
+            <p className="project-label">Full-Stack App</p>
+            <h3>Master Chef</h3>
+            <p className="project-description">
+              Developed a recipe and pantry-oriented application with features such as
+              ingredient tracking, meal planning support, and Firebase-backed data
+              management for a smoother cooking workflow.
+            </p>
+            <div className="project-chip-group">
+              <span className="project-chip">Firebase</span>
+              <span className="project-chip">Full-Stack</span>
+              <span className="project-chip">App Logic</span>
+              <span className="project-chip">User Workflow</span>
+            </div>
+          </article>
+        </div>
       </section>
 
       {/* =========================
