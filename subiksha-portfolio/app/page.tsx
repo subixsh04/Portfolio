@@ -262,16 +262,106 @@ export default function Home() {
           This will later my TA work, research work,
           and other professional experience
           ========================= */}
-      <section id="experience">
-        <h2>Experience</h2>
+      <section id="experience" className="experience-section">
+        <div className="experience-header">
+          <p className="section-tag">Experience</p>
+          <h2>Work Experience</h2>
+          <p className="experience-intro">
+            My experience so far combines teaching support, research-oriented work,
+            and hands-on technical problem solving. These roles have helped me grow
+            not only in coding, but also in communication, structured thinking, and
+            building systems that are useful in real settings.
+          </p>
+        </div>
+        <div className="experience-list">
+          <article className="experience-card">
+            <div className="experience-top">
+              <div>
+                <p className="experience-place">DASH Lab — Data Science for Health Lab</p>
+                <h3>Research Student </h3>
+              </div>  
+              <span className="experience-type">Current</span>
+            </div>
+            <p className="experience-description">
+              Contributing to research-focused technical work centered on data science
+              for health. The lab’s projects involve building data-driven and
+              AI-supported solutions that help address medical and health-related
+              problems through applied computing and analysis.
+            </p>
+            <div className="experience-tags">
+              <span>Data analysis</span>
+              <span>Software Application</span>
+              <span>AI / Data Science</span>
+              <span>Machine learning</span>
+            </div>
+          </article>
+          <article className="experience-card">
+            <div className="experience-top">
+              <div>
+                <p className="experience-place">Wright State University </p>
+                <h3>Undergraduate Teaching Assistant</h3>
+              </div>
+              <span className="experience-type">Current</span>
+            </div>
+            <p className="experience-description">
+              Supported students in understanding programming concepts, debugging, and
+              coursework-related problem solving. This role strengthened my ability to
+              explain technical ideas clearly, guide others through logic step by
+              step, and communicate effectively in academic settings.
+            </p>
+            <div className="experience-tags">
+              <span>Teaching</span>
+              <span>Debugging</span>
+              <span>Programming Support</span>
+              <span>Technical Communication and documentation</span>
+            </div>
+          </article>
+        </div>
       </section>
 
       {/* =========================
           SECTION 7: LEADERSHIP / AWARDS
           This will highlight leadership and achievements
           ========================= */}
-      <section>
-        <h2>Leadership & Awards</h2>
+      <section id="leadership" className="leadership-section">
+        <div className="leadership-header">
+          <p className="section-tag">Community Engagement</p>
+          <h2>Leadership & Awards</h2>
+          <p className="leadership-intro">
+            Alongside technical and academic work, I have also taken on leadership
+            roles that strengthened my communication, collaboration, and
+            people-centered problem solving. These experiences helped me grow in ways
+            that support both team environments and long-term professional development.
+          </p>
+        </div>
+        <div className="leadership-grid">
+          <article className="leadership-card">
+            <p className="leadership-label">Leadership Role</p>
+            <h3>Vice President of Community Council</h3>
+            <p className="leadership-description">
+              Helped support community engagement, planning, and coordination through
+              leadership responsibilities centered around communication, organization,
+              and collaborative decision making.
+            </p>
+          </article>
+          <article className="leadership-card">
+            <p className="leadership-label">Leadership Role</p>
+            <h3>Vice President of Recruitment</h3>
+            <p className="leadership-description">
+              Contributed to outreach, recruitment efforts, and organizational growth
+              while developing stronger skills in planning, representation, and
+              relationship building.
+            </p>
+          </article>
+          <article className="leadership-card">
+            <p className="leadership-label">Recognition</p>
+            <h3>NRHH Bronze Pin Award</h3>
+            <p className="leadership-description">
+              Received recognition that reflects meaningful contribution, service,
+              and involvement through leadership and community-based work.
+            </p>
+          </article>
+        </div>
       </section>
 
       {/* =========================

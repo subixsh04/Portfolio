@@ -545,4 +545,142 @@ html {
   }
 }
 
+/* ======================================================
+  EXPERIENCE SECTION
+   ====================================================== */
+.experience-header {
+  margin-bottom: 1.5rem;
+}
 
+.experience-intro {
+  max-width: 72ch;
+  margin-top: 1rem;
+}
+
+.experience-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.experience-card {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-place {
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--text-primary);
+}
+
+.experience-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(125, 211, 199, 0.18);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.experience-description {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.experience-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(205, 180, 248, 0.4);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+@media (max-width: 700px) {
+  .experience-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ======================================================
+  LEADERSHIP SECTION
+   ====================================================== */
+.leadership-header {
+  margin-bottom: 1.5rem;
+}
+
+.leadership-intro {
+  max-width: 72ch;
+  margin-top: 1rem;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.leadership-card {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.leadership-label {
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.leadership-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.leadership-description {
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
