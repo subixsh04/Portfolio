@@ -82,7 +82,7 @@ export default function Home() {
       <section id="projects" className="projects-section">
         <div className="projects-header">
           <p className="section-tag">Featured Projects</p>
-          <h2>Projects that reflect my strengths in software, data, and applied problem solving</h2>
+          <h2>Projects </h2>
           <p className="projects-intro">
             These projects highlight different parts of my experience, including
             research-focused development, frontend application building, full-stack
@@ -91,63 +91,48 @@ export default function Home() {
         </div>
         <div className="projects-grid">
           <article className="project-card featured-project">
-            <p className="project-label">Research + Mobile + Data</p>
+            <p className="project-label">Research + Mobile + Data analysis</p>
             <h3>Flow Survey Application</h3>
             <p className="project-description">
-              Worked on an Android-based research application connected to Firebase,
+              Building an Android-based research application that helps us determine our flow state better 
+              where the application is connected to Firebase to store data,
               helping improve data collection, authentication behavior, persistence,
-              and usability for a health-related research workflow.
+              and usability and the kotlin anroid application is used an user-interface mode to collect data.
             </p>
             <div className="project-chip-group">
               <span className="project-chip">Kotlin</span>
-              <span className="project-chip">Android</span>
+              <span className="project-chip">Android application</span>
               <span className="project-chip">Firebase</span>
-              <span className="project-chip">Research App</span>
             </div>
           </article>
           <article className="project-card">
-            <p className="project-label">Frontend + Product Thinking</p>
+            <p className="project-label">Frontend + Database</p>
             <h3>Penny Bread</h3>
             <p className="project-description">
-              Built a practical application focused on helping users make smarter,
+              Built an application focused on helping users make smarter,
               budget-conscious grocery decisions through structured UI, filtering,
               and useful data presentation.
             </p>
             <div className="project-chip-group">
-              <span className="project-chip">UI Design</span>
-              <span className="project-chip">Data Handling</span>
-              <span className="project-chip">Filtering</span>
-              <span className="project-chip">User-Focused Design</span>
-            </div>
-          </article>
-          <article className="project-card">
-            <p className="project-label">Web Development</p>
-            <h3>Event Management Platform</h3>
-            <p className="project-description">
-              Designed and developed a modular event management application with
-              structured frontend components, dashboard planning, and scalable
-              architecture for future backend integration and deployment.
-            </p>
-            <div className="project-chip-group">
-              <span className="project-chip">Angular</span>
-              <span className="project-chip">TypeScript</span>
-              <span className="project-chip">Component Design</span>
-              <span className="project-chip">Dashboard UI</span>
+              <span className="project-chip">AngularJS</span>
+              <span className="project-chip">SQL Database</span>
+              <span className="project-chip">Flask</span>
+              <span className="project-chip">Python</span>
             </div>
           </article>
           <article className="project-card">
             <p className="project-label">Full-Stack App</p>
             <h3>Master Chef</h3>
             <p className="project-description">
-              Developed a recipe and pantry-oriented application with features such as
-              ingredient tracking, meal planning support, and Firebase-backed data
-              management for a smoother cooking workflow.
+              Developed a recipe and pantry-oriented application that features
+              ingredient tracking, meal planning support, and stores the recipe data and
+              real time cooking management for a smoother cooking workflow.
             </p>
             <div className="project-chip-group">
               <span className="project-chip">Firebase</span>
-              <span className="project-chip">Full-Stack</span>
-              <span className="project-chip">App Logic</span>
-              <span className="project-chip">User Workflow</span>
+              <span className="project-chip">AngularJS</span>
+              <span className="project-chip">Typescript</span>
+              <span className="project-chip">Bootstrap</span>
             </div>
           </article>
         </div>
@@ -163,7 +148,7 @@ export default function Home() {
         <div className="about-text">
           <p className="section-tag">About Me</p>
 
-          <h2>Blending data, research, and software to solve meaningful problems</h2>
+          <h2>My Aspirations</h2>
 
           <p className="about-description">
             I am a Computer Science student at Wright State University with interests
