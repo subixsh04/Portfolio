@@ -367,10 +367,32 @@ export default function Home() {
       {/* =========================
           SECTION 8: CONTACT
           This will later contain email, GitHub, LinkedIn,
-          and a call to action
           ========================= */}
-      <section id="contact">
-        <h2>Contact</h2>
+      <section id="contact" className="contact-section">
+        <div className="contact-left">
+          <p className="section-tag">Contact</p>
+          <h2>Contact Information</h2>
+          <p className="contact-intro">
+            I am currently interested in opportunities related to data science,
+            database engineering, research-driven development, and software projects
+            that solve practical problems. Feel free to reach out for internships,
+            collaborations, or technical conversations.
+          </p>
+        </div>
+        <div className="contact-right">
+          <div className="contact-card">
+            <p className="contact-label">Email</p>
+            <a href="mailto:subikshasvaidhyanathan@gmail.com" className="contact-link"> subikshasvaidhyanathan@gmail.com </a>
+          </div>
+          <div className="contact-card">
+            <p className="contact-label">GitHub</p>
+            <a href="https://github.com/subixsh04" target="_blank" rel="noreferrer" className="contact-link"> github.com/subixsh04 </a>
+          </div>
+          <div className="contact-card">
+            <p className="contact-label">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/subiksha04/" className="contact-link"> LinkedIn/subixsh04 </a>
+          </div>
+        </div>
       </section>
     </main>
   );
