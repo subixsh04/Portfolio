@@ -65,7 +65,9 @@ export default function Home() {
 
       <section id="home" className="hero">
         <div className="hero-inner">
-          <div className="profile-orb">SV</div>
+          <div className="profile-orb">
+            <img src="/profile.png" alt="Subiksha Vaidhyanathan" />
+          </div>
 
           <h1>
             Subiksha <span>Vaidhyanathan</span>
